@@ -1,5 +1,6 @@
 import compoments.utils as utils
 import compoments.WordDictionnary as dictio
+import compoments.graph as graph
 import re
 
 
@@ -24,6 +25,7 @@ def pendu(OneWord):
             if lettre.lower() not in OneWord.lower() :
                 print('La lettre n\'est pas dans le mot !' )
                 nbTent +=1
+
             else :
                 print('Bravo! votre lettre est  dans le mot')
                 for index in range(len(OneWord)):
